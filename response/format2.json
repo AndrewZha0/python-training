@@ -1,0 +1,87 @@
+{
+  'ApplicationDetail': {
+    'ApplicationARN': 'arn:aws-cn:kinesisanalytics:cn-northwest-1:734176943427:application/artemis-analytics',
+    'ApplicationName': 'artemis-analytics',
+    'RuntimeEnvironment': 'FLINK-1_13',
+    'ServiceExecutionRole': 'arn:aws-cn:iam::734176943427:role/service-role/kinesis-analytics-artemis-analytics-cn-northwest-1',
+    'ApplicationStatus': 'READY',
+    'ApplicationVersionId': 59,
+    'CreateTimestamp': datetime.datetime(2023,
+    3,
+    20,
+    7,
+    34,
+    23,
+    tzinfo=tzlocal()),
+    'LastUpdateTimestamp': datetime.datetime(2023,
+    7,
+    14,
+    2,
+    46,
+    54,
+    tzinfo=tzlocal()),
+    'ApplicationConfigurationDescription': {
+      'ApplicationCodeConfigurationDescription': {
+        'CodeContentType': 'ZIPFILE',
+        'CodeContentDescription': {
+          'CodeMD5': '8fa6d84a03ab76fc370ff7b5bb0403ca',
+          'CodeSize': 118418694,
+          'S3ApplicationCodeLocationDescription': {
+            'BucketARN': 'arn:aws-cn:s3:::artemis-analytics',
+            'FileKey': 'artemis-analytic-0.0.1-SNAPSHOT-05-1.jar'
+          }
+        }
+      },
+      'FlinkApplicationConfigurationDescription': {
+        'CheckpointConfigurationDescription': {
+          'ConfigurationType': 'CUSTOM',
+          'CheckpointingEnabled': False,
+          'CheckpointInterval': 60000,
+          'MinPauseBetweenCheckpoints': 5000
+        },
+        'MonitoringConfigurationDescription': {
+          'ConfigurationType': 'CUSTOM',
+          'MetricsLevel': 'APPLICATION',
+          'LogLevel': 'INFO'
+        },
+        'ParallelismConfigurationDescription': {
+          'ConfigurationType': 'CUSTOM',
+          'Parallelism': 1,
+          'ParallelismPerKPU': 3,
+          'CurrentParallelism': 2,
+          'AutoScalingEnabled': True
+        }
+      },
+      'EnvironmentPropertyDescriptions': {
+        'PropertyGroupDescriptions': []
+      },
+      'ApplicationSnapshotConfigurationDescription': {
+        'SnapshotsEnabled': False
+      }
+    },
+    'CloudWatchLoggingOptionDescriptions': [
+      {
+        'CloudWatchLoggingOptionId': '1.1',
+        'LogStreamARN': 'arn:aws-cn:logs:cn-northwest-1:734176943427:log-group:/aws/kinesis-analytics/artemis-analytics:log-stream:kinesis-analytics-log-stream'
+      }
+    ],
+    'ApplicationMaintenanceConfigurationDescription': {
+      'ApplicationMaintenanceWindowStartTime': '13:00',
+      'ApplicationMaintenanceWindowEndTime': '21:00'
+    },
+    'ApplicationVersionUpdatedFrom': 58,
+    'ConditionalToken': '0f14d68fe678c82ce3ce294b29e48a6a',
+    'ApplicationMode': 'STREAMING'
+  },
+  'ResponseMetadata': {
+    'RequestId': 'e8677a3a-e383-461e-9408-1e20d35d1774',
+    'HTTPStatusCode': 200,
+    'HTTPHeaders': {
+      'x-amzn-requestid': 'e8677a3a-e383-461e-9408-1e20d35d1774',
+      'content-type': 'application/x-amz-json-1.1',
+      'content-length': '1898',
+      'date': 'Fri, 14 Jul 2023 03:01:38 GMT'
+    },
+    'RetryAttempts': 0
+  }
+}
